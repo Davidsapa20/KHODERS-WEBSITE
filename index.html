@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHODES CSS</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudFlare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <!-- 1. selectors & Basic Properties - Hero Section-->
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">✨ KHODERS</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#courses">🖥️ Courses</a></li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#login" class="book-now">Log In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">EMPOWERING YOUNG MINDS</h1>
+            <p class="hero-p">
+                Discover a world of learning posiblities with our
+                <span id="hero-span">innovative</span> educational platform
+            </p>
+        </div>
+    </header>
+    <!-- 2. Fonts - Features Section -->
+    <section class="features" id="services">
+        <div class="features-container">
+            <div class="features-items">
+                <h2 class="features-title features-title-selected">Empower Student Learning</h2>
+                <p class="features-p">Our platform enhances student engagement by providing interactives learning tools. Experience a seamless integration of technology that supports diverse learning styles</p>
+            </div>
+            <div class="features-items">
+                <h2 class="features-title">Streamline communication tools</h2>
+                <p class="features-p">Stay connected with parents and students through our easy-to-use communication features. Faster collaboration and transparency within your educational community.</p>
+            </div>
+            <div class="features-items">
+                <h2 class="features-title">customazible Learning Experience</h2>
+                <p class="features-p">Tailor your curiculum to meet the unique of your students. Our flexible platform allows educators to create personalized learning paths.</p>
+            </div>
+        </div>
+
+        <div class="feature-image-container">
+            <img src="./images/_MGL0516.jpg" alt="Feature Image" class="feature-image">
+        </div>
+    </section>
+
+    <!-- 3. Colors - call to action section -->
+    <section class="cta">
+        <h3 class="cta-title">Learn More About us by contacting Us </h3>
+        <p class="cta-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, beatae nulla quam fugiat dolore deserunt pariatur similique veritatis eos recusandae labore iste repudiandae voluptates minus assumenda libero illum sunt vitae.</p>
+        <button class="cta-button cta-button-primary">Learn More</button>
+    </section>
+    <!-- 4. box model - video section -->
+    <section class="video" id="courses">
+        <h3 class="video-title">Build Your Future With us</h3>
+        <p class="video-p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quod autem doloremque aut velit suscipit corrupti eos omnis commodi, hic harum, unde necessitatibus soluta.
+        </p>
+        <div class="video-controls">
+            <button class="video-btn video-btn-primary">
+                <i class="fas fa-book"></i> Lear More
+            </button>
+            <button class="video-btn video-btn-secondary">
+                <i class="fas fa-play-circle"></i> Watch Video
+            </button>
+        </div>
+        <div class="video-container"></div>
+    </section>
+    <!-- 5. Flex - Perogram section -->
+    <section class="programs" id="about-us">
+        <h2>Explore Our State of the Art Facilities and Enriching Lerning Experience</h2>
+        <div class="program-cards">
+            <div class="program-card">
+                <img class="program-card-img" src="./images/_MGL0607.jpg" alt="learning activities">
+                <h3>Engaging Extracuricular Activities for Holistic Student Development</h3>
+                <p class="program-card-p">Our school offers facilities design to enhance learning experience</p>
+                <button class="program-button">Learn More</button>
+            </div>
+            <div class="program-card">
+                <img class="program-card-img" src="./images/_MGL0599.jpg" alt="learning activities">
+                <h3>Diverse Academic programs Tailored to Student Interests and Goals</h3>
+                <p class="program-card-p">We provide a wide range of academic programs to cater to every student</p>
+                <button class="program-button">Read More</button>
+            </div>
+            <div class="program-card">
+                <img class="program-card-img" src="./images/_MGL0672.jpg" alt="learning activities">
+                <h3>Dedicated Staff Committed to Student Success and Growth</h3>
+                <p class="program-card-p">Our experience educators are passionated about nurturing each student's potential</p>
+                <button class="program-button">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. HTML Elements & Images - Form Section -->
+    <section class="element" id="login">
+        <div class="element-left">
+            <img src="./images/restart.jpg" alt="Form Image" class="element-image">
+        </div>
+        <div class="element-right">
+            <h2>Sign Up Today Now!</h2>
+            <p class="element-p">Fill out the form to sign up for our newsletter and receive updates </p>
+            <form action="" class="element-form">
+                <h3>Your Interests: </h3>
+                <ul class="element-list">
+                    <li class="element-list-items">Web Development</li>
+                    <li class="element-list-items">UI/UX Design</li>
+                    <li class="element-list-items">Digital Marketing</li>
+                </ul>
+
+                <div class="element-form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Enter username">
+                </div>
+
+                <div class="element-form-group">
+                    <label for="course">Select Course:</label>
+                    <select id="course">
+                        <option value="">Choose a course...</option>
+                        <option value="html">HTML & CSS</option>
+                        <option value="js">Javascript</option>
+                        <option value="react">React</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="element-btn">Submit Form</button>
+
+            </form>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Khodes</h2>
+                <p>We Will Make Your Future Better.</p>
+            </div>
+            <div class="footer-contact">
+                <p><strong>Email:</strong> support@khodesbox.com</p>
+                <p><strong>Phone:</strong> +233 123 456 789</p>
+                <p><strong>Location:</strong> Kumasi, Ghana</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Khodes Restart Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+
+</html>
